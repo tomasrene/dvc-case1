@@ -2,16 +2,21 @@ import pandas as pd
 from sklearn.linear_model import LogisticRegression
 from sklearn.tree import DecisionTreeClassifier
 import pickle
+import yaml
+from yaml.loader import FullLoader
 
 def main():
     # get train data
-    data = pd.read_csv("data_train.csv")    
+    data = pd.read_csv("data_train.csv")
+
+    with open("params.yaml","r") as f:
+        params = yaml.safe_load(f)
 
     # do some processing
     X,y = process(data)
 
     # create model
-    model = train(X,y)
+    model = train(X,y,params['train_model'])
 
     # save pickled model
     save_model(model)
@@ -22,9 +27,9 @@ def process(data):
     
     return X,y
 
-def train(X,y):
+def train(X,y,params):
     # create model
-    model = DecisionTreeClassifier()
+    model = DecisionTreeClassifier(**params)
 
     # fitting to data
     model.fit(X,y)

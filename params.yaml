@@ -1,0 +1,4 @@
+train_model:
+  criterion: 'entropy' # 'gini'
+  splitter: 'best' # “random”
+  min_samples_split: 2

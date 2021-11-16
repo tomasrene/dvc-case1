@@ -6,6 +6,10 @@ stages:
     - train_model.py
     outs:
     - model.pickle
+    params:
+    - train_model.criterion
+    - train_model.min_samples_split
+    - train_model.splitter
   test_model:
     cmd: python test_model.py
     deps:

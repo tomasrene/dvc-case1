@@ -1,0 +1,16 @@
+stages:
+  train_model:
+    cmd: python train_model.py
+    deps:
+    - data_train.csv
+    - train_model.py
+    outs:
+    - model.pickle
+  test_model:
+    cmd: python test_model.py
+    deps:
+    - data_test.csv
+    - model.pickle
+    - test_model.py
+    outs:
+    - metrics.json

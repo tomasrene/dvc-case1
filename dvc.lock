@@ -1,0 +1,31 @@
+schema: '2.0'
+stages:
+  train_model:
+    cmd: python train_model.py
+    deps:
+    - path: data_train.csv
+      md5: 932fcdce508893de7a944757b7fec5bf
+      size: 127
+    - path: train_model.py
+      md5: 048fd5fa5b897f955e3628de48087db1
+      size: 696
+    outs:
+    - path: model.pickle
+      md5: 5c8d1a099bb845b7022cde9490ef4833
+      size: 870
+  test_model:
+    cmd: python test_model.py
+    deps:
+    - path: data_test.csv
+      md5: ea9445e323fd98e89905a83296fd1739
+      size: 91
+    - path: model.pickle
+      md5: 5c8d1a099bb845b7022cde9490ef4833
+      size: 870
+    - path: test_model.py
+      md5: f43be9029c250bd7b19888f3c0493eaa
+      size: 991
+    outs:
+    - path: metrics.json
+      md5: bd92656ab1d6cc8eaffbafadb257eba5
+      size: 37

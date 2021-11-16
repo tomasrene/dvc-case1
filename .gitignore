@@ -1,3 +1,5 @@
 /data_test.csv
 venv/
 /data_train.csv
+/model.pickle
+/metrics.json

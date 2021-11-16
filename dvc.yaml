@@ -12,5 +12,5 @@ stages:
     - data_test.csv
     - model.pickle
     - test_model.py
-    outs:
+    metrics:
     - metrics.json

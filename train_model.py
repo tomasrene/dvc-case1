@@ -1,5 +1,6 @@
 import pandas as pd
 from sklearn.linear_model import LogisticRegression
+from sklearn.tree import DecisionTreeClassifier
 import pickle
 
 def main():
@@ -23,12 +24,12 @@ def process(data):
 
 def train(X,y):
     # create model
-    lr = LogisticRegression()
+    model = DecisionTreeClassifier()
 
     # fitting to data
-    lr.fit(X,y)
+    model.fit(X,y)
 
-    return lr
+    return model
 
 def save_model(model):
     # pickling model

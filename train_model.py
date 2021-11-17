@@ -31,6 +31,8 @@ def train(X,y,params):
     # create model
     model = DecisionTreeClassifier(**params)
 
+    print(model)
+
     # fitting to data
     model.fit(X,y)
 

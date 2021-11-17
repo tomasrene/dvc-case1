@@ -1,7 +1,7 @@
 # DVC - CASE 1
 Here you have the data for testing DVC on your local machine. Please follow the instructions below:
 ### STEPS
-<ol><li>Download this repo (manually or by <code>svn export httsp://github.com/tomasrene/dvc-case1/trunk .</code>)</li>
+<ol><li>Download this repo (manually or by <code>svn export --force httsp://github.com/tomasrene/dvc-case1/trunk ./</code>)</li>
 <li>Create a virtual environment (for example with <code>python3 -m venv venv</code>)</li>
 <li>Initialize the virtual environment (for example with <code>source venv/bin/activate</code>)</li>
 <li>Install the requirements (for example with <code>python3 -m pip install -r requirements.txt</code>)</li>

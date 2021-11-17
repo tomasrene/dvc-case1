@@ -8,7 +8,7 @@ Here you have the data for testing DVC on your local machine. Please follow the 
 <li>Initialize a git repo (<code>git init</code>)</li>
 <li>Initialize a dvc repo (<code>dvc init</code>)</li>
 <li>Add the .csv files to DVC (<code>dvc add data_train.csv data_test.csv</code>)</li>
-<li>Follow the instructions that DVC provided (<code>git add .dvcignore data_train.csv.dvc data_test.csv.dvc</code>)</li>
+<li>Follow the instructions that DVC provided (<code>git add .gitignore data_train.csv.dvc data_test.csv.dvc</code>)</li>
 <li>Add the .py files to git (<code>git add train_model.py test_model.py</code>)</li>
 <li>Commit changes to git (<code>git commit -m "First commit"</code>)</li>
 </ol>

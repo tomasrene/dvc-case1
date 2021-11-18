@@ -1,9 +1,7 @@
 import pandas as pd
-from sklearn.linear_model import LogisticRegression
 from sklearn.tree import DecisionTreeClassifier
 import pickle
 import yaml
-from yaml.loader import FullLoader
 
 def main():
     # get train data
@@ -30,8 +28,6 @@ def process(data):
 def train(X,y,params):
     # create model
     model = DecisionTreeClassifier(**params)
-
-    print(model)
 
     # fitting to data
     model.fit(X,y)

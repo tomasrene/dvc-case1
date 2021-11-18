@@ -13,6 +13,6 @@ Here you have the data for testing DVC on your local machine. Please follow the 
 <li>Commit changes to git (<code>git commit -m "First commit"</code>)</li>
 </ol>
 <br>
-<p><b>Congrats!</b> You've initialized a DVC repo linked to a GIT repo (if you want, you can add a git remote origin to start pushing to a repo).\
+<p><b>Congrats!</b> You've initialized a DVC repo linked to a GIT repo (if you want, you can add a git remote origin to start pushing to a repo).
   Now you can go on with the rest of the tutorial to learn the funcionalities that DVC provides.</p>
 

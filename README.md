@@ -1,3 +1,11 @@
+# Ejercicio de DVC · archivo de formación
+
+Ejercicio histórico de versionado de datos y modelos. Se conserva el material original como referencia, sin mantenimiento activo ni verificación actual de las instrucciones.
+
+[Exploraciones actuales](https://github.com/tomasrene/exploraciones)
+
+## Instrucciones originales
+
 # DVC - CASE 1
 Here you have the data for testing DVC on your local machine. Please follow the instructions below:
 ### STEPS
